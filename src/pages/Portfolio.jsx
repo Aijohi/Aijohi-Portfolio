@@ -13,8 +13,10 @@ import {
   FiMinus,
 } from "react-icons/fi";
 
-import { FiMenu, FiX } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
+import { FiMenu, FiX } from "react-icons/fi";
+import { FiLayers } from "react-icons/fi";
 import blogPattern from "../assets/Images/Portfolio/blog-pattern.png";
 import profilePhoto from "../assets/Images/Portfolio/aijohi-photo.png";
 import avatarPhoto from "../assets/Images/Portfolio/aijohi-avatar.png";
@@ -72,7 +74,7 @@ const services = [
     number: "4",
     title: "User Research",
     description:
-      "I gather insights from users to understand behaviours, pain points, and opportunities for improvement.",
+      "I uncover customer needs, behaviours, and market opportunities to help teams make informed product decisions.",
   },
   {
     number: "5",
@@ -90,7 +92,7 @@ const services = [
 
 const projects = [
   {
-    title: "Elev8",
+    title: "EbonyLife - Elev8",
     description:
       "A streaming and entertainment experience designed for content discovery and user engagement.",
     role: "Product Design",
@@ -135,7 +137,7 @@ const projects = [
     link: "https://www.behance.net/gallery/208532937/FaithVerse-Where-kids-discover-and-grow-in-faith",
   },
   {
-    title: "Optimus Academy",
+    title: "Optimus AI LMS",
     description:
       "A learning management system designed for structured digital learning.",
     role: "Product Design",
@@ -147,7 +149,7 @@ const projects = [
     title: "Domino’s Pizza App Redesign",
     description:
       "A case study focused on improving mobile ordering and user experience.",
-    role: "UX Redesign",
+    role: "UI/UX Redesign",
     year: "2023",
     image: dominos,
     link: "https://www.behance.net/gallery/164289075/CASE-STUDY-on-Redesign-of-Dominos-Pizza-Mobile-App",
@@ -284,20 +286,23 @@ const blogPosts = [
 
 const faqs = [
   {
-    question: "Can you help redesign an existing product?",
-    answer:
-      "Yes. I can review and improve existing products, identify usability issues, and create a clearer user experience.",
-  },
-  {
     question: "What type of projects do you work on?",
     answer:
       "I work on web platforms, mobile applications, dashboards, internal tools, and digital products across different industries.",
   },
+
   {
     question: "How do you approach a new project?",
     answer:
       "I start by understanding the problem, users, and business goals. From there, I explore ideas, create wireframes, prototype solutions, and refine the experience through feedback.",
   },
+
+  {
+    question: "Can you help redesign an existing product?",
+    answer:
+      "Yes. I can review and improve existing products, identify usability issues, and create a clearer user experience.",
+  },
+  
   {
     question: "Do you work with developers?",
     answer:
@@ -566,9 +571,7 @@ useEffect(() => {
           <p className="eyebrow">01 - What I help with</p>
 
           <h2>
-            I help shape your ideas into clean designs that work well for real
-            people. From small tasks to full products, I focus on making the
-            experience simple, useful, and ready to grow.
+          Everything you need to move an idea from concept to experience.
           </h2>
         </div>
 
@@ -641,6 +644,52 @@ useEffect(() => {
           </a>
         </div>
       </section>
+      <div className="additional-products-card">
+  <div className="additional-products-top">
+    <div className="additional-products-icon">
+      <FiLayers />
+    </div>
+
+    <div>
+      <h3>Additional Products & Platforms</h3>
+    </div>
+  </div>
+
+  <div className="additional-products-list">
+    <div>
+      <strong>SmartMenu</strong>
+      <p>Restaurant operations platform available across web and mobile.</p>
+    </div>
+
+    <div>
+      <strong>AltTill</strong>
+      <p>Digital banking and operations platform for Alternative Bank.</p>
+    </div>
+    
+    <div>
+      <strong>eeV AI</strong>
+      <p>
+        AI-powered customer support platform focused on faster resolutions and
+        improved customer experiences.
+      </p>
+    </div>
+
+    <div>
+      <strong>Optimus AI Labs Website</strong>
+      <p>Digital platform supporting AI education and innovation.</p>
+    </div>
+
+    <div>
+      <strong>Unshelled Consultancy Website</strong>
+      <p>Corporate website focused on brand storytelling and digital presence.</p>
+    </div>
+
+    <div>
+      <strong>Asavani</strong>
+      <p>Digital agriculture platform connecting farmers with modern opportunities.</p>
+    </div>
+  </div>
+</div>
 
       <section id="Github" className="portfolio-section github-section">
   <div className="github-header">
@@ -812,21 +861,34 @@ useEffect(() => {
       </article>
     ))}
   </div>
+  
+  <div className="testimonial-controls">
+  <button
+    className="testimonial-control-btn"
+    onClick={() =>
+      setTestimonialIndex((prev) =>
+        prev === 0 ? testimonials.length - testimonialsPerPage : prev - testimonialsPerPage
+      )
+    }
+    aria-label="Previous testimonial"
+  >
+    <FiArrowLeft />
+  </button>
 
-  <div className="testimonial-dots">
-    {Array.from({
-      length: Math.ceil(testimonials.length / testimonialsPerPage),
-    }).map((_, index) => (
-      <button
-        key={index}
-        className={
-          testimonialIndex / testimonialsPerPage === index ? "active" : ""
-        }
-        onClick={() => setTestimonialIndex(index * testimonialsPerPage)}
-        aria-label={`Go to testimonial group ${index + 1}`}
-      />
-    ))}
-  </div>
+  <button
+    className="testimonial-control-btn"
+    onClick={() =>
+      setTestimonialIndex((prev) =>
+        prev + testimonialsPerPage >= testimonials.length
+          ? 0
+          : prev + testimonialsPerPage
+      )
+    }
+    aria-label="Next testimonial"
+  >
+    <FiArrowRight />
+  </button>
+</div>
 </section>
 
   <section id="Blog" className="portfolio-section blog-section">
@@ -951,16 +1013,6 @@ useEffect(() => {
       </div>
       
       <a
-      href="https://www.linkedin.com/in/otu-faith"
-      target="_blank"
-      rel="noreferrer"
-      >
-      <span className="contact-icon">in</span>
-      <strong>LinkedIn</strong>
-      <FiArrowUpRight />
-      </a>
-
-      <a
         href="https://www.behance.net/otufaithaijohi3"
         target="_blank"
         rel="noreferrer"
@@ -968,6 +1020,16 @@ useEffect(() => {
         <span className="contact-icon">Be</span>
         <strong>Behance</strong>
         <FiArrowUpRight />
+      </a>
+
+      <a
+      href="https://www.linkedin.com/in/otu-faith"
+      target="_blank"
+      rel="noreferrer"
+      >
+      <span className="contact-icon">in</span>
+      <strong>LinkedIn</strong>
+      <FiArrowUpRight />
       </a>
 
       <a
@@ -980,13 +1042,20 @@ useEffect(() => {
         <FiArrowUpRight />
       </a>
 
-      <a href="mailto:faithaijohi@gmail.com">
-        <span className="contact-icon">
-          <FiMail />
-        </span>
-        <strong>Email</strong>
-        <FiArrowUpRight />
-      </a>
+      <a
+  href="https://x.com/iamaijohi?s=21"
+  target="_blank"
+  rel="noreferrer"
+  aria-label="X (Twitter)"
+>
+  <span className="contact-icon">
+    <FaXTwitter />
+  </span>
+
+  <strong>X (Twitter)</strong>
+  <FiArrowUpRight />
+</a>
+
     </div>
   </div>
 </section>
