@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/Images/Portfolio/logo.svg";
+import logo from "../assets/Images/Portfolio/Logo.svg";
 import {
   FiArrowUpRight,
   FiMail,
