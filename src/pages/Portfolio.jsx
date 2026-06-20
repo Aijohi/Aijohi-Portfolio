@@ -522,13 +522,12 @@ useEffect(() => {
 
           <div className="social-icons">
             <a
-              href="https://www.linkedin.com/in/faith-otu"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/otu-faith"
+            target="_blank"
+            rel="noreferrer"
             >
-              <FiLinkedin />
-            </a>
+  LinkedIn <FiArrowUpRight />
+</a>
 
             <a
               href="https://www.behance.net/otufaithaijohi3"
@@ -949,15 +948,15 @@ useEffect(() => {
         <p>Connect with me</p>
         <span></span>
       </div>
-
+      
       <a
-        href="https://www.linkedin.com/in/faith-otu"
-        target="_blank"
-        rel="noreferrer"
+      href="https://www.linkedin.com/in/otu-faith"
+      target="_blank"
+      rel="noreferrer"
       >
-        <span className="contact-icon">in</span>
-        <strong>LinkedIn</strong>
-        <FiArrowUpRight />
+      <span className="contact-icon">in</span>
+      <strong>LinkedIn</strong>
+      <FiArrowUpRight />
       </a>
 
       <a

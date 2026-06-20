@@ -2373,18 +2373,24 @@ button,
   }
 
   .works-header {
-    text-align: left;
-    align-items: flex-start;
+    text-align: center;
+    align-items: center;
   }
 
-  .works-header h2 {
+.works-header .eyebrow {
+  text-align: center;
+}
+
+.works-header h2 {
     font-size: 38px;
-    text-align: left;
-  }
+    text-align: center;
+}
 
   .works-tagline {
-    font-size: 17px;
-  }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   .github-section {
   padding: 90px 24px;
