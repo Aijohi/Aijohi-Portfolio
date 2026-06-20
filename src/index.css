@@ -2392,16 +2392,29 @@ button,
   margin-right: auto;
 }
 
-  .github-section {
+.github-section {
   padding: 90px 24px;
 }
 
 .github-header {
-  text-align: left;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto 48px;
+}
+
+.github-header .eyebrow {
+  text-align: center;
 }
 
 .github-header h2 {
   font-size: 36px;
+  text-align: center;
+  margin: 0 auto 16px;
+}
+
+.github-header p {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .github-card {
