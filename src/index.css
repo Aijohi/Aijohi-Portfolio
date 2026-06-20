@@ -2722,7 +2722,7 @@ button,
   }
 
   .testimonial-card p {
-    text-align: center;
+    text-align: left;
     max-width: 100%;
     font-size: 14px;
   }
