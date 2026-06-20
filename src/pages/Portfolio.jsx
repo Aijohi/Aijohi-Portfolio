@@ -525,9 +525,10 @@ useEffect(() => {
             href="https://www.linkedin.com/in/otu-faith"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
             >
-  LinkedIn <FiArrowUpRight />
-</a>
+            <FiLinkedin />
+            </a>
 
             <a
               href="https://www.behance.net/otufaithaijohi3"
