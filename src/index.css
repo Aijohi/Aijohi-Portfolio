@@ -2386,8 +2386,8 @@ button,
 
   .reveal-section {
   opacity: 0;
-  transform: translateY(48px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(35px);
+  transition: opacity 1s ease, transform 1s ease;
   }
 
   .reveal-section.show {
