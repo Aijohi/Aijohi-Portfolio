@@ -397,7 +397,9 @@ useEffect(() => {
 }, []);
 
     useEffect(() => {
-  const revealItems = document.querySelectorAll(".reveal-section");
+  const revealItems = document.querySelectorAll(
+    ".reveal-section, .reveal-card"
+  );
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -601,7 +603,7 @@ useEffect(() => {
 
           <div className="services-grid"> 
             {services.map((service) => (
-              <article className="service-card" key={service.number}>
+              <article className="service-card reveal-card" key={service.number}>
                 <div className="service-number">{service.number}</div>
 
                 <div>
@@ -629,7 +631,7 @@ useEffect(() => {
 
         <div className="project-list">
           {projects.map((project) => (
-            <article className="project-row" key={project.title}>
+            <article className="project-row reveal-card" key={project.title}>
               <div className="project-copy">
                 <h3>{project.title}</h3>
 
@@ -670,7 +672,7 @@ useEffect(() => {
           </a>
         </div>
       </section>
-      <div className="additional-products-card">
+      <div className="additional-products-card reveal-card">
   <div className="additional-products-top">
     <div className="additional-products-icon">
       <FiLayers />
@@ -731,7 +733,7 @@ useEffect(() => {
   ) : (
     <div className="github-grid">
       {githubRepos.map((repo) => (
-        <article className="github-card" key={repo.id}>
+        <article className="github-card reveal-card" key={repo.id}>
           <h3>{repo.name}</h3>
 
           <p>
@@ -792,7 +794,7 @@ useEffect(() => {
     </div>
 
     <div className="how-cards">
-      <article className="how-card">
+      <article className="how-card reveal-card">
         <span>01</span>
         <h3>I learn by doing</h3>
         <p>
@@ -801,7 +803,7 @@ useEffect(() => {
         </p>
       </article>
 
-      <article className="how-card">
+      <article className="how-card reveal-card">
         <span>02</span>
         <h3>I explain things simply</h3>
         <p>
@@ -810,7 +812,7 @@ useEffect(() => {
         </p>
       </article>
 
-      <article className="how-card">
+      <article className="how-card reveal-card">
         <span>03</span>
         <h3>I design for real people</h3>
         <p>
@@ -873,7 +875,7 @@ useEffect(() => {
 
   <div className="testimonial-grid">
     {visibleTestimonials.map((item) => (
-      <article className="testimonial-card" key={item.name}>
+      <article className="testimonial-card reveal-card" key={item.name}>
         <div className="testimonial-top">
           <div>
             <h3>{item.name}</h3>
@@ -932,7 +934,7 @@ useEffect(() => {
 
     <div className="blog-grid">
       {visibleBlogs.map((post) => (
-        <article className="blog-card" key={post.title}>
+        <article className="blog-card reveal-card" key={post.title}>
           <img src={post.image} alt={post.title} />
 
           <span className="blog-category">{post.category}</span>
