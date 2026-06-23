@@ -396,6 +396,28 @@ useEffect(() => {
     });
 }, []);
 
+    useEffect(() => {
+  const revealItems = document.querySelectorAll(".reveal-section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+    }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+
+  return () => observer.disconnect();
+}, []);
+
+
   return (
     <main className="portfolio-page">
         <header className="portfolio-nav">
@@ -566,7 +588,9 @@ useEffect(() => {
         </div>
       </div>
 
-      <section id="Services" className="portfolio-section services-section">
+      <section
+          id="Services"
+          className="portfolio-section services-section reveal-section">
         <div className="services-header">
           <p className="eyebrow">01 - What I help with</p>
 
@@ -590,7 +614,9 @@ useEffect(() => {
         
       </section>
 
-      <section id="Works" className="portfolio-section works-section">
+      <section 
+          id="Works"
+          className="portfolio-section works-section reveal-sectio">
         <div className="works-header">
           <p className="eyebrow">02 - Selected Projects</p>
 
@@ -691,7 +717,7 @@ useEffect(() => {
   </div>
 </div>
 
-      <section id="Github" className="portfolio-section github-section">
+<section id="Github" className="portfolio-section github-section reveal-section">
   <div className="github-header">
     <p className="eyebrow">03 - GitHub API</p>
     <h2>Recent GitHub Repositories</h2>
@@ -724,7 +750,7 @@ useEffect(() => {
   )}
 </section>
 
-      <section id="Experience" className="portfolio-section experience-section">
+      <section id="Experience" className="portfolio-section experience-section reveal-section">
 
         <div className="experience-header">
         <p className="eyebrow">04 - Experience</p>
@@ -754,7 +780,7 @@ useEffect(() => {
        </div> 
       </section>
 
-  <section id="how-i-work" className="portfolio-section how-section">
+  <section id="how-i-work" className="portfolio-section how-section reveal-section">
   <div className="how-canvas">
     <div className="how-header">
       <p className="eyebrow">05 - How I work</p>
@@ -835,7 +861,7 @@ useEffect(() => {
   </div>
 </section>
 
-  <section id="Testimonials" className="portfolio-section testimonials-section">
+  <section id="Testimonials" className="portfolio-section testimonials-section reveal-section">
   <div className="testimonial-header">
     <p className="eyebrow">06 - From those I worked with</p>
     <h2>Thoughts on working with me</h2>
@@ -891,7 +917,7 @@ useEffect(() => {
 </div>
 </section>
 
-  <section id="Blog" className="portfolio-section blog-section">
+  <section id="Blog" className="portfolio-section blog-section reveal section">
   <div className="blog-canvas">
     <div className="blog-header">
       <p className="eyebrow">07 - From my mind to yours</p>
@@ -939,7 +965,7 @@ useEffect(() => {
   </div>
 </section>
 
-<section id="FAQ" className="portfolio-section faq-section">
+<section id="FAQ" className="portfolio-section faq-section reveal-section">
   <div className="faq-canvas">
     <div className="faq-header">
       <p className="eyebrow">08 - FAQ</p>
@@ -986,7 +1012,7 @@ useEffect(() => {
   </div>
 </section>
 
-<section id="Contact" className="portfolio-section contact-section">
+<section id="Contact" className="portfolio-section contact-section reveal-section">
   <div className="contact-canvas">
     <div className="contact-left">
       <p className="eyebrow">09 - Contact</p>

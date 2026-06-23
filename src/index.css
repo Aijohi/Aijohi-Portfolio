@@ -2384,6 +2384,17 @@ button,
     letter-spacing: 0.12em;
   }
 
+  .reveal-section {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal-section.show {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
   .portfolio-nav {
     height: 74px;
     padding: 0 20px;
@@ -2414,7 +2425,7 @@ button,
   }
 
   .portfolio-hero {
-    padding: 120px 24px 60px;
+    padding: 100px 20px 50px;
   }
 
   .hero-left h1 {
