@@ -733,7 +733,7 @@ useEffect(() => {
   ) : (
     <div className="github-grid">
       {githubRepos.map((repo) => (
-        <article className="github-card reveal-card" key={repo.id}>
+        <article className="github-card" key={repo.id}>
           <h3>{repo.name}</h3>
 
           <p>
