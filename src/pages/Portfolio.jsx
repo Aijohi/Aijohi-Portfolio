@@ -719,37 +719,76 @@ useEffect(() => {
   </div>
 </div>
 
-<section id="Github" className="portfolio-section github-section reveal-section">
+    <section id="Github" className="portfolio-section github-section reveal-section">
   <div className="github-header">
-    <p className="eyebrow">03 - GitHub API</p>
-    <h2>Recent GitHub Repositories</h2>
+    <p className="eyebrow">03 - DEVELOPMENT PROJECTS</p>
+    <h2>Frontend Development Projects</h2>
     <p>
-      A few repositories fetched directly from my GitHub profile using the GitHub API.
+      A collection of projects showcasing my learning journey, problem-solving
+      approach, and growing experience in modern web development.
     </p>
   </div>
 
-  {githubLoading ? (
-    <p className="github-loading">Loading repositories...</p>
-  ) : (
-    <div className="github-grid">
-      {githubRepos.map((repo) => (
-        <article className="github-card" key={repo.id}>
-          <h3>{repo.name}</h3>
+  <div className="github-grid">
+    <article className="github-card">
+      <h3>Mid-Capstone Project</h3>
+      <p>
+        A responsive web project built with HTML and CSS, demonstrating
+        frontend fundamentals, user-focused design, and clean implementation
+        practices.
+      </p>
 
-          <p>
-            {repo.description || "No description available for this repository."}
-          </p>
+      <div className="github-meta">
+        <div className="github-links">
+          <a href="https://github.com/Aijohi/Mid-Capstone.git" target="_blank" rel="noreferrer">
+            View Code <FiArrowUpRight />
+          </a>
+          <a href="https://mid-capstone.vercel.app/" target="_blank" rel="noreferrer">
+            Live Demo <FiArrowUpRight />
+          </a>
+        </div>
+      </div>
+    </article>
 
-          <div className="github-meta">
-            <span>{repo.language || "Code"}</span>
-            <a href={repo.html_url} target="_blank" rel="noreferrer">
-              View repo <FiArrowUpRight />
-            </a>
-          </div>
-        </article>
-      ))}
-    </div>
-  )}
+    <article className="github-card">
+      <h3>HerTechTrail Product</h3>
+      <p>
+        A product-focused web application showcasing responsive design,
+        reusable components, and modern frontend development practices.
+      </p>
+
+      <div className="github-meta">
+        <div className="github-links">
+          <a href="https://github.com/Aijohi/Hertechtrail-product.git" target="_blank" rel="noreferrer">
+            View Code <FiArrowUpRight />
+          </a>
+          <a href="https://hertechtrail-product.vercel.app/" target="_blank" rel="noreferrer">
+            Live Demo <FiArrowUpRight />
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article className="github-card">
+      <h3>Tailwind CSS Website</h3>
+      <p>
+        A modern landing page built with Tailwind CSS, demonstrating
+        utility-first styling, responsive layouts, and clean frontend
+        implementation.
+      </p>
+
+      <div className="github-meta">
+        <div className="github-links">
+          <a href="https://github.com/Aijohi/tailwindcss-website1.git" target="_blank" rel="noreferrer">
+            View Code <FiArrowUpRight />
+          </a>
+          <a href="https://tailwindcss-website1.vercel.app/" target="_blank" rel="noreferrer">
+            Live Demo <FiArrowUpRight />
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
 </section>
 
       <section id="Experience" className="portfolio-section experience-section reveal-section">
