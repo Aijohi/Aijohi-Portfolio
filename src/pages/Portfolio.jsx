@@ -25,6 +25,7 @@ import iseSchools from "../assets/Images/Portfolio/ise-schools.png";
 import healthAI from "../assets/Images/Portfolio/health-ai.png";
 import evconnect from "../assets/Images/Portfolio/evconnect.png";
 import faithverse from "../assets/Images/Portfolio/faithverse.png";
+import optimusAiLabs from "../assets/Images/Portfolio/optimus-ai-labs.png";
 import optimusAcademy from "../assets/Images/Portfolio/optimus-academy.png";
 import dominos from "../assets/Images/Portfolio/dominos-redesign.png";
 
@@ -110,22 +111,13 @@ const projects = [
     link: "https://www.behance.net/gallery/202331893/is-Schools-A-solution-for-Africas-tech-education",
   },
   {
-    title: "HEALTH.AI",
-    description:
-      "An AI healthcare documentation experience built around clarity, support, and usability.",
-    role: "Product Design",
-    year: "2024",
-    image: healthAI,
-    link: "https://www.behance.net/gallery/191775215/HEALTHAI-DOCUMENTATION",
-  },
-  {
-    title: "EVConnect",
-    description:
-      "A mobile app for locating electric vehicle charging stations with ease.",
-    role: "Product Design",
-    year: "2024",
-    image: evconnect,
-    link: "https://www.behance.net/gallery/184288427/EVConnect-Electric-Vehicle-Charging-Station-Locator-App",
+  title: "Optimus AI Labs Website",
+  description:
+    "Collaborated on the design of the Optimus AI Labs website, helping create a modern digital experience that showcases the company's AI products, services, and expertise.",
+  role: "Brand Website",
+  year: "2026",
+  image: optimusAiLabs,
+  link: "https://optimusai.ai/",
   },
   {
     title: "FaithVerse Kids Bible App",
@@ -145,28 +137,13 @@ const projects = [
     image: optimusAcademy,
     link: "https://www.behance.net/gallery/241676555/A-LEARNIG-MANAGEMENT-SYSTEM",
   },
-  {
-    title: "Domino’s Pizza App Redesign",
-    description:
-      "A case study focused on improving mobile ordering and user experience.",
-    role: "UI/UX Redesign",
-    year: "2023",
-    image: dominos,
-    link: "https://www.behance.net/gallery/164289075/CASE-STUDY-on-Redesign-of-Dominos-Pizza-Mobile-App",
-  },
 ];
 
 const experiences = [
   {
-    role: "Product Designer",
-    company: "Unshelled Consultancy",
-    period: "2025 - Present",
-  },
-
-  {
     role: "Associate Lead Product Designer",
     company: "Optimus AI Labs",
-    period: "2024 - 2025",
+    period: "2024 - Present",
   },
 
   {
@@ -518,7 +495,7 @@ useEffect(() => {
 
           <div className="hero-stats">
             <div>
-              <strong>4+</strong>
+              <strong>6+</strong>
               <span>years of experience</span>
             </div>
 
@@ -620,7 +597,7 @@ useEffect(() => {
           id="Works"
           className="portfolio-section works-section reveal-sectio">
         <div className="works-header">
-          <p className="eyebrow">02 - Selected Projects</p>
+          <p className="eyebrow">02 - Featured Projects</p>
 
           <h2>A glimpse into my work</h2>
 
@@ -672,52 +649,6 @@ useEffect(() => {
           </a>
         </div>
       </section>
-      <div className="additional-products-card reveal-card">
-  <div className="additional-products-top">
-    <div className="additional-products-icon">
-      <FiLayers />
-    </div>
-
-    <div>
-      <h3>Additional Products & Platforms</h3>
-    </div>
-  </div>
-
-  <div className="additional-products-list">
-    <div>
-      <strong>SmartMenu</strong>
-      <p>Restaurant operations platform available across web and mobile.</p>
-    </div>
-
-    <div>
-      <strong>AltTill</strong>
-      <p>Digital banking and operations platform for Alternative Bank.</p>
-    </div>
-    
-    <div>
-      <strong>eeV AI</strong>
-      <p>
-        AI-powered customer support platform focused on faster resolutions and
-        improved customer experiences.
-      </p>
-    </div>
-
-    <div>
-      <strong>Optimus AI Labs Website</strong>
-      <p>Digital platform supporting AI education and innovation.</p>
-    </div>
-
-    <div>
-      <strong>Unshelled Consultancy Website</strong>
-      <p>Corporate website focused on brand storytelling and digital presence.</p>
-    </div>
-
-    <div>
-      <strong>Asavani</strong>
-      <p>Digital agriculture platform connecting farmers with modern opportunities.</p>
-    </div>
-  </div>
-</div>
 
     <section id="Github" className="portfolio-section github-section reveal-section">
   <div className="github-header">
