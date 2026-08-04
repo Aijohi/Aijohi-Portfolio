@@ -21,6 +21,7 @@ import blogPattern from "../assets/Images/Portfolio/blog-pattern.png";
 import profilePhoto from "../assets/Images/Portfolio/aijohi-photo.png";
 import avatarPhoto from "../assets/Images/Portfolio/aijohi-avatar.png";
 import elev8 from "../assets/Images/Portfolio/Elev8.png";
+import asavani from "../assets/Images/Portfolio/asavani.png";
 import iseSchools from "../assets/Images/Portfolio/ise-schools.png";
 import healthAI from "../assets/Images/Portfolio/health-ai.png";
 import evconnect from "../assets/Images/Portfolio/evconnect.png";
@@ -32,7 +33,7 @@ import dominos from "../assets/Images/Portfolio/dominos-redesign.png";
 const navItems = [
   { id: "About", label: "About" },
   { id: "Services", label: "Services" },
-  { id: "Works", label: "Works" },
+  { id: "Works", label: "My Works" },
   { id: "Experience", label: "Experience" },
   { id: "how-i-work", label: "How I Work" },
   { id: "Testimonials", label: "Testimonials" },
@@ -92,11 +93,29 @@ const services = [
 ];
 
 const projects = [
+   {
+    title: "Asavani",
+    description:
+      "A digital agriculture platform connecting farmers with buyers and opportunities.",
+    role: "Product Design · Client Project",
+    year: "2026",
+    image: asavani,
+    link: "https://asavani.com",
+  },
+  {
+  title: "Optimus AI Labs Website",
+  description:
+    "Collaborated on the design of the Optimus AI Labs website, helping create a modern digital experience that showcases the company's AI products, services, and expertise.",
+  role: "Product Design · Brand Website",
+  year: "2026",
+  image: optimusAiLabs,
+  link: "https://optimusai.ai/",
+  },
   {
     title: "EbonyLife - Elev8",
     description:
       "A streaming and entertainment experience designed for content discovery and user engagement.",
-    role: "Product Design",
+    role: "Product Design · Client Project",
     year: "2025",
     image: elev8,
     link: "https://ebonylifeonplus.com/content/elev8-1",
@@ -105,63 +124,45 @@ const projects = [
     title: "isé Schools",
     description:
       "A solution for Africa’s tech education, focused on access, learning, and digital growth.",
-    role: "Product Design",
+    role: "Product Design · Education Platform",
     year: "2024",
     image: iseSchools,
     link: "https://www.behance.net/gallery/202331893/is-Schools-A-solution-for-Africas-tech-education",
   },
   {
-  title: "Optimus AI Labs Website",
-  description:
-    "Collaborated on the design of the Optimus AI Labs website, helping create a modern digital experience that showcases the company's AI products, services, and expertise.",
-  role: "Brand Website",
-  year: "2026",
-  image: optimusAiLabs,
-  link: "https://optimusai.ai/",
-  },
-  {
     title: "FaithVerse Kids Bible App",
     description:
       "A Bible learning app designed to help children discover and grow in faith.",
-    role: "Product Design",
+    role: "Product Design · Personal Project",
     year: "2024",
     image: faithverse,
     link: "https://www.behance.net/gallery/208532937/FaithVerse-Where-kids-discover-and-grow-in-faith",
-  },
-  {
-    title: "Optimus AI LMS",
-    description:
-      "A learning management system designed for structured digital learning.",
-    role: "Product Design",
-    year: "2025",
-    image: optimusAcademy,
-    link: "https://www.behance.net/gallery/241676555/A-LEARNIG-MANAGEMENT-SYSTEM",
   },
 ];
 
 const experiences = [
   {
     role: "Associate Lead Product Designer",
-    company: "Optimus AI Labs",
+    company: "Optimus AI Labs - Full-time",
     period: "2024 - Present",
   },
 
   {
+    role: "Senior Product Designer",
+    company: "Unshelled Consultancy - Contract",
+    period: "2025 - Present",
+  },
+  
+  {
     role: "Product Designer",
-    company: "ISE Nigeria",
+    company: "ISE Nigeria - Full-time",
     period: "2023 -2024",
   },
 
   {
     role: "Product Designer",
-    company: "SNET Track Services",
+    company: "SNET Track Services - Freelance",
     period: "2020 - 2023",
-  },
-
-  {
-    role: "Product Designer",
-    company: "Excel Craftman",
-    period: "2020 - 2021",
   },
 ];
 
