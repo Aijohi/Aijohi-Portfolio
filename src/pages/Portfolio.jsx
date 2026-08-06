@@ -547,7 +547,7 @@ useEffect(() => {
             </a>
 
             <a
-              href="https://www.instagram.com/cr8tive_aijohi/?hl=en"
+              href="https://www.instagram.com/aijohicreates/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -1032,7 +1032,7 @@ useEffect(() => {
       </a>
 
       <a
-        href="https://www.instagram.com/cr8tive_aijohi/?hl=en"
+        href="https://www.instagram.com/aijohicreates/"
         target="_blank"
         rel="noreferrer"
       >
