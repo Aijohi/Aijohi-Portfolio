@@ -480,7 +480,7 @@ useEffect(() => {
 
           <div className="hero-actions">
             <a
-              href="https://drive.google.com/file/d/1HZiCXnBxkzgP91Tc7Fo-MwHQIaoHIknD/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1HZiCXnBxkzgP91Tc7Fo-MwHQIaoHIknD/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="primary-btn"
