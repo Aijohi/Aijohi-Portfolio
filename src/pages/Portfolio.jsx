@@ -150,13 +150,13 @@ const experiences = [
   {
     role: "Product Designer",
     company: "ISE Nigeria - Full-time",
-    period: "2023 -2024",
+    period: "2022 -2024",
   },
 
   {
     role: "Product Designer",
     company: "SNET Track Services - Freelance",
-    period: "2020 - 2023",
+    period: "2020 - 2022",
   },
 ];
 
