@@ -146,12 +146,6 @@ const experiences = [
     company: "Optimus AI Labs - Full-time",
     period: "2024 - Present",
   },
-
-  {
-    role: "Senior Product Designer",
-    company: "Unshelled Consultancy - Contract",
-    period: "2025 - Present",
-  },
   
   {
     role: "Product Designer",
@@ -480,7 +474,7 @@ useEffect(() => {
 
           <div className="hero-actions">
             <a
-              href="https://drive.google.com/file/d/1HZiCXnBxkzgP91Tc7Fo-MwHQIaoHIknD/view?usp=sharing"
+              href="https://drive.google.com/file/d/1HZiCXnBxkzgP91Tc7Fo-MwHQIaoHIknD/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               className="primary-btn"
