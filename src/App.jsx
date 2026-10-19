@@ -1,13 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Welcome from "./pages/Welcome";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Welcome/>} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/portfolio" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
