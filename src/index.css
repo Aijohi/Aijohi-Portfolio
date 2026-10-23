@@ -7188,3 +7188,24 @@ body, #root, .portfolio-page.portfolio-refresh {background:#09070f!important;col
     background:radial-gradient(ellipse 95% 26% at 50% 0%,rgba(130,75,181,.08),transparent 90%),#0b0812 !important;
   }
 }
+
+
+/* AIJOHI — mobile navigation: lavender active state, no teal/green */
+@media (max-width: 1180px) {
+  .portfolio-page.portfolio-refresh .mobile-menu-links a.active,
+  .portfolio-page.portfolio-refresh .mobile-menu-links a[aria-current="page"],
+  .portfolio-page.portfolio-refresh .mobile-menu-links a[aria-current="location"] {
+    color: #f7f0ff !important;
+    -webkit-text-fill-color: #f7f0ff !important;
+    background: rgba(185, 137, 241, 0.16) !important;
+    border-color: rgba(201, 165, 244, 0.62) !important;
+    box-shadow: inset 3px 0 0 #c9a5f4 !important;
+  }
+  .portfolio-page.portfolio-refresh .mobile-menu-links a:hover,
+  .portfolio-page.portfolio-refresh .mobile-menu-links a:focus-visible {
+    color: #f7f0ff !important;
+    -webkit-text-fill-color: #f7f0ff !important;
+    background: rgba(185, 137, 241, 0.12) !important;
+    border-color: rgba(201, 165, 244, 0.42) !important;
+  }
+}
