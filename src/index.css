@@ -7209,3 +7209,74 @@ body, #root, .portfolio-page.portfolio-refresh {background:#09070f!important;col
     border-color: rgba(201, 165, 244, 0.42) !important;
   }
 }
+
+/* AIJOHI: responsive SVG branding and active section navigation */
+.portfolio-page.portfolio-refresh .portfolio-nav .aijohi-nav-logo {
+  display: block; width: auto; max-width: 148px; height: 34px; object-fit: contain;
+}
+.portfolio-page.portfolio-refresh .mobile-menu .aijohi-nav-logo {
+  display: block; width: auto; max-width: 145px; height: 34px; object-fit: contain;
+}
+@media (max-width: 1180px) {
+  .portfolio-page.portfolio-refresh .portfolio-nav .aijohi-nav-logo { max-width: 124px; height: 30px; }
+  .portfolio-page.portfolio-refresh .mobile-menu .aijohi-nav-logo { max-width: 128px; height: 32px; }
+  .portfolio-page.portfolio-refresh .mobile-menu-links a.active,
+  .portfolio-page.portfolio-refresh .mobile-menu-links a[aria-current="location"] {
+    color: #f7f0ff !important;
+    -webkit-text-fill-color: #f7f0ff !important;
+    background: rgba(185,137,241,.16) !important;
+    border-color: rgba(201,165,244,.62) !important;
+    box-shadow: inset 3px 0 0 #c9a5f4 !important;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio-page.portfolio-refresh .portfolio-nav .aijohi-nav-logo { max-width: 112px; height: 28px; }
+  .portfolio-page.portfolio-refresh .mobile-menu-card { max-width: calc(100vw - 24px); }
+}
+
+
+/* AIJOHI: final header logo sizing. Original SVG artwork is unchanged. */
+.portfolio-page.portfolio-refresh .portfolio-nav.portfolio-floating-nav .portfolio-logo {
+  display: flex !important;
+  align-items: center !important;
+  width: 176px !important;
+  min-width: 0 !important;
+  max-width: 176px !important;
+  flex: 0 0 176px !important;
+}
+.portfolio-page.portfolio-refresh .portfolio-nav.portfolio-floating-nav .portfolio-logo img.aijohi-nav-logo {
+  display: block !important;
+  width: 176px !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 46px !important;
+  object-fit: contain !important;
+  transform: none !important;
+}
+@media (max-width: 1180px) {
+  .portfolio-page.portfolio-refresh .portfolio-nav.portfolio-floating-nav .portfolio-logo {
+    width: 140px !important;
+    max-width: 140px !important;
+    flex-basis: 140px !important;
+  }
+  .portfolio-page.portfolio-refresh .portfolio-nav.portfolio-floating-nav .portfolio-logo img.aijohi-nav-logo {
+    width: 140px !important;
+    max-height: 38px !important;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-page.portfolio-refresh .portfolio-nav.portfolio-floating-nav .portfolio-logo {
+    width: 126px !important;
+    max-width: 126px !important;
+    flex-basis: 126px !important;
+  }
+  .portfolio-page.portfolio-refresh .portfolio-nav.portfolio-floating-nav .portfolio-logo img.aijohi-nav-logo,
+  .portfolio-page.portfolio-refresh .mobile-menu .aijohi-nav-logo {
+    width: 126px !important;
+    height: auto !important;
+    max-width: 126px !important;
+    max-height: 36px !important;
+    object-fit: contain !important;
+    transform: none !important;
+  }
+}

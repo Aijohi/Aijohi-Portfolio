@@ -562,7 +562,7 @@ const faqs = [
 
 function Portfolio() {
 
-  const [activeSection, setActiveSection] = useState("AboutMe");
+  const [activeSection, setActiveSection] = useState("Works");
   const [headerScrolled, setHeaderScrolled] = useState(false);
 
   const [testimonialIndex, setTestimonialIndex] = useState(0);
@@ -616,17 +616,18 @@ useEffect(() => {
     setHeaderScrolled(
       hero ? hero.getBoundingClientRect().bottom <= 88 : window.scrollY > 600
     );
-    const scrollPosition = window.scrollY + 140;
-
+    // Use viewport positions rather than offsetTop so nested sections work on mobile.
+    const marker = Math.min(180, Math.max(100, window.innerHeight * 0.24));
     let currentSection = "Works";
-    const visibleSections = navItems
-      .map((item) => ({ id: item.id, element: document.getElementById(item.id) }))
-      .filter((item) => item.element)
-      .sort((a, b) => a.element.offsetTop - b.element.offsetTop);
-    visibleSections.forEach((item) => {
-      if (item.element.offsetTop <= scrollPosition) currentSection = item.id;
-    });
-
+    for (const item of navItems) {
+      const section = document.getElementById(item.id);
+      if (section && section.getBoundingClientRect().top <= marker) {
+        currentSection = item.id;
+      }
+    }
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 12) {
+      currentSection = "Contact";
+    }
     setActiveSection(currentSection);
 
   };
@@ -731,7 +732,7 @@ useEffect(() => {
 
   <a href="#About" className="portfolio-logo">
 
-    <span className="aijohi-wordmark">AIJOHI</span>
+    <img src={logo} alt="AIJOHI" className="aijohi-nav-logo" />
 
   </a>
 
@@ -746,6 +747,7 @@ useEffect(() => {
         href={`#${item.id}`}
 
         className={activeSection === item.id ? "active" : ""}
+        aria-current={activeSection === item.id ? "location" : undefined}
 
       >
 
@@ -789,7 +791,7 @@ useEffect(() => {
 
       <div className="mobile-menu-top">
 
-        <span className="aijohi-wordmark">AIJOHI</span>
+        <img src={logo} alt="AIJOHI" className="aijohi-nav-logo" />
 
         <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu">
 
@@ -812,6 +814,7 @@ useEffect(() => {
             href={`#${item.id}`}
 
             className={activeSection === item.id ? "active" : ""}
+            aria-current={activeSection === item.id ? "location" : undefined}
 
             onClick={() => setIsMenuOpen(false)}
 
