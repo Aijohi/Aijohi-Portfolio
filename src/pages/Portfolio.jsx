@@ -852,7 +852,7 @@ useEffect(() => {
           <h1><span>Designing thoughtful</span><span className="aijohi-headline-muted">digital experiences</span><em>for real people.</em></h1>
           <p className="aijohi-hero-description">I'm Aijohi, a Senior Product Designer creating clear, useful products that solve real problems and make everyday experiences better.</p>
           <div className="aijohi-hero-ctas">
-            <a className="aijohi-resume-button" href="https://drive.google.com/file/d/1HZiCXnBxkzgP91Tc7Fo-MwHQIaoHIknD/view?usp=drive_link" target="_blank" rel="noreferrer">View my resume</a>
+            <a className="aijohi-resume-button" href="https://drive.google.com/drive/folders/1iUxLvHPpIWShOLLNBhWIjrsxLJoXBWB-" target="_blank" rel="noreferrer">View my resume</a>
             <a className="aijohi-email-button" href="mailto:faithaijohi@gmail.com">Email me</a>
           </div>
           <div className="hero-stats" aria-label="Portfolio highlights">
@@ -1029,7 +1029,7 @@ useEffect(() => {
             <div className="aijohi-about-photo">
               <img src={profilePhoto} alt="Portrait of Otu Faith Aijohi" loading="lazy" />
             </div>
-            <div className="aijohi-about-float aijohi-about-float-top"><strong>5+</strong><span>Years of experience</span></div>
+            <div className="aijohi-about-float aijohi-about-float-top"><strong>6+</strong><span>Years of experience</span></div>
             <div className="aijohi-about-float aijohi-about-float-bottom"><span className="aijohi-about-dot" /> Product Designer <FiArrowUpRight aria-hidden="true" /></div>
           </div>
           <div className="aijohi-about-copy">
@@ -1038,7 +1038,7 @@ useEffect(() => {
             <p>I'm Otu Faith Aijohi, a Senior Product Designer who enjoys turning complex ideas into simple, useful digital experiences.</p>
             <p>I work across research, design, and development to create products that solve real problems. I care about thoughtful details, accessibility, and making technology easier for people to use.</p>
             <div className="aijohi-about-stats" aria-label="Career highlights">
-              <div className="aijohi-about-stat"><FiLayers aria-hidden="true" /><strong>5+</strong><span>Years of experience</span></div>
+              <div className="aijohi-about-stat"><FiLayers aria-hidden="true" /><strong>6+</strong><span>Years of experience</span></div>
               <div className="aijohi-about-stat"><FiPenTool aria-hidden="true" /><strong>10+</strong><span>Projects worked on</span></div>
               <div className="aijohi-about-stat"><FiTool aria-hidden="true" /><strong>3+</strong><span>Core disciplines</span></div>
             </div>

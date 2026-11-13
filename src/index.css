@@ -7280,3 +7280,43 @@ body, #root, .portfolio-page.portfolio-refresh {background:#09070f!important;col
     transform: none !important;
   }
 }
+
+
+/* AIJOHI: keep both hero buttons on one row on phones. Desktop unchanged. */
+@media (max-width: 600px) {
+  .portfolio-page.portfolio-refresh .aijohi-editorial-hero .aijohi-hero-ctas {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: min(100%, 380px) !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    flex-wrap: nowrap !important;
+  }
+  .portfolio-page.portfolio-refresh .aijohi-editorial-hero .aijohi-hero-ctas a.aijohi-resume-button,
+  .portfolio-page.portfolio-refresh .aijohi-editorial-hero .aijohi-hero-ctas a.aijohi-email-button {
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    padding: 9px 7px !important;
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+  }
+}
+@media (max-width: 360px) {
+  .portfolio-page.portfolio-refresh .aijohi-editorial-hero .aijohi-hero-ctas { gap: 7px !important; }
+  .portfolio-page.portfolio-refresh .aijohi-editorial-hero .aijohi-hero-ctas a.aijohi-resume-button,
+  .portfolio-page.portfolio-refresh .aijohi-editorial-hero .aijohi-hero-ctas a.aijohi-email-button {
+    font-size: 11px !important;
+    padding-inline: 5px !important;
+  }
+}
